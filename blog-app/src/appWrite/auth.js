@@ -45,11 +45,10 @@ export class AuthService{
    async currentUser(){
     try {
         return await this.account.get();
-        
+       
     } catch (error) {
         throw error;
     }
-    return null;
    }
 
    async logOut(){
